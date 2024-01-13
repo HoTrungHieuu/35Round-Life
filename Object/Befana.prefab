@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5795137580587909376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9195115196747570896}
+  - component: {fileID: 2258663687343382837}
+  - component: {fileID: 2950111522379932907}
+  m_Layer: 0
+  m_Name: Befana
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9195115196747570896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795137580587909376}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.17932, y: -0.5806117, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2258663687343382837
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795137580587909376}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: cd55cefeca3aafb4fa9bb9350c06fca7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.06, y: 2.3}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &2950111522379932907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5795137580587909376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7da797b0c631994d9e1cf42de6a9cb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelType: 6
+  Class: Mage
+  Name: Befana
+  DamageType: Mixture
+  Hp: 700
+  Att: 120
+  Def: 28
+  Speed: 40
+  CritRate: 1
+  CritDamage: 1
+  Accuracy: 0
+  Evasion: 0
+  PhysicalResistance: 0
+  MagicalResistance: 0
+  Penetration: 0
+  LifeSteal: 0
+  DamageReflect: 0
+  HealingAddition: 0
+  DamageAddition: 0
+  DamageReducion: 0
+  EnergyAddition: 0
+  Skill:
+  - 'Active Skill: Deal damage equivalent 300%(+0.5% every EnergyPower having) for
+    all enemies.'
+  - 'Passive Skill: Damage Deal will divide into 40% Physical Damage, 40% Magical
+    Damage, 40% True Damage.'
+  - 'Passive Skill: Befana have EnergyPower, it will consume every she use Active
+    Skill(1 EnergyPower = 1 Energy), if it is not enough Befena will use her MaxHp(0.8%
+    Max Hp = 1 EnergyPower). If Max Hp not enough Befena will use last Active Skill
+    and die.'
+  - 'Passive Skill: Befana can not Life Steal, instead of current Hp can excess Max
+    Hp, and all shield recieve will convert into Hp.'
+  - 'Passive Skill: Naturally, Befena Have 100% Crit Rate and 100% Crit Damage.'
+  - 'Passive Skill: At the start, convert all Crit Rate and Crit Damage into EnergyPower(1%
+    Crit Rate = 2.5 EnergyPower and 1% Crit Damage= 1.5 EnergyPower).'
+  PassiveActiveTime: 00000000
+  Money: 18
+  isDiscount: 0
